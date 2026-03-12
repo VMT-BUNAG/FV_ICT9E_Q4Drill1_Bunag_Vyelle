@@ -6,14 +6,57 @@
     <title>Q4 Drill 1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        body{
+            background-color: #fde2e4;
+            font-family: Arial, sans-serif;
+        }
+
+        .page-center {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .yes {
+            background-color: #fff;
+            border: 4px dashed #f4a7b9;
+            border-radius: 30px;
+            padding: 40px;
+            width: 600px;
+            margin: auto;
+        }
+
+        .title {
+            background-color: #f9c5d1;
+            border-radius: 18px;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .btn-pink {
+            background-color: #f4a7b9;
+            border: none;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 28px;
+            font-size: 18px;
+        }
+
+    </style>
+    
 </head>
 <body>
-    <h1>ELECTRICITY CONSUMPTION CLASSIFIED</h1>
+    <div style="background-color:#ffe6f2; display:flex; justify-content:center; align-items:center; height:100vh;">
+    <div class="yes">
+    <h1 class="title">ELECTRICITY CONSUMPTION CLASSIFIED</h1>
     <!--comment-->
     <input type="text" id="cnsmp" class="form-control" placeholder="type here...">
 
-    <button class="btn btn-info" onclick="checkConsumption()">Check</button>
-
+    <button class="btn-pink mt-3" onclick="checkConsumption()">Check</button>
+        
     <script>
         function checkConsumption(){
             var consumption = document.getElementById("cnsmp").value;
